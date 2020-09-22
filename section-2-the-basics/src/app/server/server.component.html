@@ -1,0 +1,8 @@
+<p>I'm the server component</p>
+<div 
+    [ngStyle]="{'background-color': getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">
+    <!-- [ngClass]="{online: isServerOnline()}"> -->
+    Server with ID <b>{{ serverId }}</b> is <b>{{ getServerStatus() }}</b>
+</div>
+<!-- <div [ngStyle]="{backgroundColor: getColor()}">Server with ID <b>{{ serverId }}</b> is <b>{{ getServerStatus() }}</b> </div> -->
